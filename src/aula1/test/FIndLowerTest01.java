@@ -6,12 +6,12 @@ import java.util.concurrent.ThreadLocalRandom;
 public class FIndLowerTest01 {
     public static void main(String[] args) {
         int[] list = randomArrayGenerator();
-        int menor = list[0];
+        int possivelMenorValor = list[0];
 
-        int menorParcial = findLowerValue(list, menor);
+        int menorValorDaLista = findLowerValue(list, possivelMenorValor);
 
         System.out.println(Arrays.toString(list));
-        System.out.printf("O menor da lista é %d", menorParcial);
+        System.out.printf("O possivelMenorValor da lista é %d", menorValorDaLista);
     }
 
     private static int findLowerValue(int[] list, int menor) {
